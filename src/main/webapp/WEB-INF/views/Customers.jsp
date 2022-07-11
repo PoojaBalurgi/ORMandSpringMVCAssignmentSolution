@@ -48,7 +48,7 @@
 						<td style="padding: 10px;">${s.email}</td>
 						<td style="padding: 10px; text-align: center;">
 							<a href="addOrUpdateRecord?customerId=${s.customerId}" style="text-decoration: none"> Update </a>
-							<a href="deleteRecord?customerId=${s.customerId}" style="text-decoration: none">| Delete </a>
+							<a onclick="return confirm('Are you sure you want to delete?');" href="deleteRecord?customerId=${s.customerId}" style="text-decoration: none">| Delete </a>
 						</td>
 					</tr>
 					</c:forEach>	
